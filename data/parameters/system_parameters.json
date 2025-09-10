@@ -1,0 +1,152 @@
+{
+  "geometry": {
+    "description": "Electrode and channel geometry parameters",
+    "electrode_length": {
+      "value": 0.05,
+      "unit": "m",
+      "description": "Length of each electrode"
+    },
+    "electrode_width": {
+      "value": 0.02,
+      "unit": "m",
+      "description": "Width of each electrode"
+    },
+    "electrode_thickness": {
+      "value": 0.001,
+      "unit": "m",
+      "description": "Thickness of electrode material"
+    },
+    "channel_height": {
+      "value": 0.005,
+      "unit": "m",
+      "description": "Height of electrolyte channel"
+    },
+    "electrode_separation": {
+      "value": 0.005,
+      "unit": "m",
+      "description": "Distance between anode and cathode"
+    }
+  },
+  "electrochemical": {
+    "description": "Electrochemical kinetic parameters",
+    "anode_exchange_current": {
+      "value": 1e-3,
+      "unit": "A/m²",
+      "description": "Exchange current density for oxygen evolution"
+    },
+    "cathode_exchange_current": {
+      "value": 1e-2,
+      "unit": "A/m²",
+      "description": "Exchange current density for hydrogen evolution"
+    },
+    "anode_charge_transfer": {
+      "value": 0.5,
+      "unit": "dimensionless",
+      "description": "Anodic charge transfer coefficient"
+    },
+    "cathode_charge_transfer": {
+      "value": 0.5,
+      "unit": "dimensionless",
+      "description": "Cathodic charge transfer coefficient"
+    },
+    "surface_roughness": {
+      "value": 100,
+      "unit": "dimensionless",
+      "description": "Electrode surface roughness factor"
+    }
+  },
+  "operating_conditions": {
+    "description": "Default operating conditions",
+    "temperature": {
+      "value": 298.15,
+      "unit": "K",
+      "description": "Operating temperature"
+    },
+    "pressure": {
+      "value": 101325,
+      "unit": "Pa",
+      "description": "Operating pressure"
+    },
+    "inlet_velocity": {
+      "value": 0.01,
+      "unit": "m/s",
+      "description": "Electrolyte inlet velocity"
+    },
+    "electrolyte_concentration": {
+      "value": 1000,
+      "unit": "mol/m³",
+      "description": "Supporting electrolyte concentration"
+    },
+    "pH": {
+      "value": 7.0,
+      "unit": "dimensionless",
+      "description": "Electrolyte pH"
+    }
+  },
+  "material_properties": {
+    "description": "Physical and chemical properties",
+    "water_density": {
+      "value": 997.0,
+      "unit": "kg/m³",
+      "description": "Water density at 25°C"
+    },
+    "water_viscosity": {
+      "value": 8.9e-4,
+      "unit": "Pa·s",
+      "description": "Water dynamic viscosity at 25°C"
+    },
+    "electrode_conductivity": {
+      "value": 1e6,
+      "unit": "S/m",
+      "description": "Electrical conductivity of electrode material"
+    },
+    "electrolyte_conductivity": {
+      "value": 10.9,
+      "unit": "S/m",
+      "description": "Ionic conductivity of electrolyte"
+    },
+    "diffusion_coefficients": {
+      "H+": {
+        "value": 9.31e-9,
+        "unit": "m²/s",
+        "description": "Proton diffusion coefficient"
+      },
+      "OH-": {
+        "value": 5.27e-9,
+        "unit": "m²/s",
+        "description": "Hydroxide ion diffusion coefficient"
+      },
+      "H2": {
+        "value": 4.5e-9,
+        "unit": "m²/s",
+        "description": "Hydrogen molecule diffusion coefficient"
+      },
+      "O2": {
+        "value": 2.0e-9,
+        "unit": "m²/s",
+        "description": "Oxygen molecule diffusion coefficient"
+      }
+    }
+  },
+  "numerical": {
+    "description": "Numerical simulation parameters",
+    "mesh_resolution": {
+      "x_elements": 100,
+      "y_elements": 50,
+      "z_elements": 20,
+      "description": "Number of mesh elements in each direction"
+    },
+    "convergence": {
+      "relative_tolerance": 1e-6,
+      "absolute_tolerance": 1e-9,
+      "max_iterations": 100,
+      "description": "Convergence criteria for iterative solvers"
+    },
+    "time_stepping": {
+      "time_step": 0.01,
+      "final_time": 10.0,
+      "unit": "s",
+      "description": "Time stepping parameters for transient simulations"
+    }
+  }
+}
