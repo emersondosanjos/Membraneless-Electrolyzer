@@ -14,14 +14,9 @@ The supplementary material includes:
 
 Device schematics and design parameters
 
-Raw and processed experimental data
-
-
-Availability Notice
-The content of this repository will be made publicly available upon acceptance of the manuscript by the International Journal of Hydrogen Energy. Until then, the repository remains private and under development.
 
 📧 Contact
 For questions or collaboration inquiries, please contact:
 
-Emerson Barbosa dos Anjos emersonbanjos [at] emersonbanjos@mecanica.coppe.ufrj.br
+Emerson Barbosa dos Anjos emersonbanjos emersonbanjos@mecanica.coppe.ufrj.br
 COPPE/UFRJ – Mechanical Engineering Department
